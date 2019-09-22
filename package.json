@@ -1,0 +1,24 @@
+{
+    "name": "node_pc_test",
+    "version": "1.0.0",
+    "description": "trying rest in node",
+    "main": "app.js",
+    "dependencies": {
+        "express": "^4.17.1",
+        "joi": "^13.1.0"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/amitiwary999/NodeJS_test.git"
+    },
+    "author": "meera",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/amitiwary999/NodeJS_test/issues"
+    },
+    "homepage": "https://github.com/amitiwary999/NodeJS_test#readme"
+}
