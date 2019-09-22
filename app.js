@@ -11,7 +11,7 @@ const books = [
 
 // READ Request Handlers
 app.get('/', (req, res) => {
-    res.send('Welcome to Edurekas REST API with Node.js Tutorial!!')
+    res.send('Trying REST API with Node.js')
 })
 
 app.get('/api/books', (req, res) => {
@@ -21,7 +21,7 @@ app.get('/api/books', (req, res) => {
 app.get('/api/books/:id', (req, res) => {
     const book = books.find(c => c.id === parseInt(req.params.id))
 
-    if (!book) res.status(404).send('<h2 style="font-family: Malgun Gothic; color: darkred;">Ooops... Cant find what you are looking for!</h2>')
+    if (!book) res.status(404).send('Ooops... Cant find what you are looking for!')
     res.send(book)
 })
 
@@ -44,7 +44,7 @@ app.post('/api/books', (req, res) => {
 // UPDATE Request Handler
 app.put('/api/books/:id', (req, res) => {
     const book = books.find(c => c.id === parseInt(req.params.id))
-    if (!book) res.status(404).send('<h2 style="font-family: Malgun Gothic; color: darkred;">Not Found!! </h2>')
+    if (!book) res.status(404).send('Not Found!!')
 
     const { error } = false;
     if (error) {
@@ -60,7 +60,7 @@ app.put('/api/books/:id', (req, res) => {
 app.delete('/api/books/:id', (req, res) => {
 
     const book = books.find(c => c.id === parseInt(req.params.id))
-    if (!book) res.status(404).send('<h2 style="font-family: Malgun Gothic; color: darkred;"> Not Found!! </h2>')
+    if (!book) res.status(404).send(' Not Found!!')
 
     const index = books.indexOf(book)
     books.splice(index, 1)
